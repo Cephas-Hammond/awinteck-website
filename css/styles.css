@@ -1,0 +1,247 @@
+html, body {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+#home {
+    background-image: linear-gradient(rgb(69, 34, 150,0.5),rgb(69, 34, 150,0.5)),url("/images/background.jpg");
+    background-size: cover;
+    margin-bottom: 1rem;
+    width: 100%;
+    
+}
+
+.mainnav {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    
+}
+
+
+.container-fluid {
+    margin: 3% 10%;
+}
+
+.navbar .navbar-brand{
+    font-size: 2rem;
+    color: #3D2C8D;
+    font-weight: 700;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    color: #3D2C8D;
+}
+
+.navbar .navbar-nav .nav-item a {
+    color: #3D2C8D;
+    font-weight: 600;
+    border-radius: 25px;
+
+}
+.navbar .navbar-nav .nav-item a:hover {
+    background-color: #3D2C8D;
+    color: white;
+    border-radius: 25px;
+}
+.navbar .navbar-nav .nav-item a:active {
+    background-color: #3D2C8D;
+    color: white;
+    border-radius: 25px;
+}
+
+.navbar-toggler {
+    background-color: #3D2C8D;
+}
+.container-home {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 5rem;
+}
+
+.container {
+    color: #3D2C8D;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+}
+.container .heading {
+    position: relative;
+}
+.container .heading-rule {
+    
+    height: 0.5rem;
+    width: 45%;
+    text-align: right;
+    border-bottom: none;
+    border-radius: 5px;
+    border-color: #27186b;
+    margin-top: 0;
+    opacity: 1;
+    position: relative;
+    left: 35%;
+   
+}
+.container h1 {
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.container p {
+    text-align: center;
+    color: rgb(59, 58, 58);
+    width: 100%;
+}
+.container-project {
+    color: #3D2C8D;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 0 ;
+}
+.container-project .heading-rule {
+    
+    height: 0.5rem;
+    width: 45%;
+    text-align: right;
+    border-bottom: none;
+    border-radius: 5px;
+    border-color: #27186b;
+    margin-top: 0;
+    opacity: 1;
+    position: relative;
+    left: 35%;
+   
+}
+.image-container {
+    background-color: whitesmoke;
+    height: 80%;
+}
+.image-container .row {
+    padding: 0;
+    height: auto;
+    
+}
+.image-container .first img {
+    padding-top: 1rem;
+    
+    padding-bottom: 1rem;
+    width: 80%;
+    height: 80%;
+    
+}
+.image-container .second {
+    padding: 1rem auto;
+    margin-bottom: 1rem;
+}
+.image-container .second img {
+    width: 80%;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+.container-records {
+    margin: 0 auto;
+    padding: auto;
+    text-align: center;
+}
+.record {
+    width: 80%;
+    height: 80%;
+    background-color: #3D2C8D;
+    border-radius: 80%;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.col-lg-3 {
+    padding: 1rem;
+    text-align: center;
+}
+.record .number {
+    color: white;
+    margin:0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.record p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.container-request {
+    background-color: #3D2C8D;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.container-request h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.btn {
+    color: white;
+    background-color: #533faa;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.logo-container img {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+footer {
+    background-color: #3D2C8D;
+    text-align: center;
+    height: auto;
+    padding: 50px 50px 5px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+footer .awinteck-info {
+    text-align: start;
+    width: 80%;
+}
+
+footer .useful-block {
+    text-align: start;
+}
+
+footer .useful-block a{
+     text-align: inherit;
+     color: white;
+     text-decoration: none;
+}
+
+footer .info-block {
+    text-align: start;
+}
+footer .info-block ul {
+    margin: 0;
+    padding: 0;
+}
+footer .info-block li {
+    list-style-type: none;
+    
+}
+footer p {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
