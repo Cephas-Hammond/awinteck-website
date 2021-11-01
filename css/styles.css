@@ -30,7 +30,7 @@ html, body {
 .navbar .navbar-brand{
     font-size: 2rem;
     color: #3D2C8D;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .nav-item {
@@ -54,9 +54,17 @@ html, body {
     color: white;
     border-radius: 25px;
 }
-
 .navbar-toggler {
     background-color: #3D2C8D;
+    padding: auto;
+    margin: auto;
+}
+
+
+.navbar-toggler-icon {
+    width: 1.8rem;
+    border-radius: 5px;
+    margin: auto;
 }
 .container-home {
     text-align: center;
@@ -73,21 +81,8 @@ html, body {
 .container .heading {
     position: relative;
 }
-.container .heading-rule {
-    
-    height: 0.5rem;
-    width: 45%;
-    text-align: right;
-    border-bottom: none;
-    border-radius: 5px;
-    border-color: #27186b;
-    margin-top: 0;
-    opacity: 1;
-    position: relative;
-    left: 35%;
-   
-}
 .container h1 {
+    text-align: center;
     font-weight: 700;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -97,16 +92,11 @@ html, body {
     color: rgb(59, 58, 58);
     width: 100%;
 }
-.container-project {
-    color: #3D2C8D;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    padding: 0 ;
-}
-.container-project .heading-rule {
+
+.container hr {
     
     height: 0.5rem;
-    width: 45%;
+    width: 50%;
     text-align: right;
     border-bottom: none;
     border-radius: 5px;
@@ -117,32 +107,117 @@ html, body {
     left: 35%;
    
 }
+
+#services .row .col-lg-4 {
+    text-align: center;
+}
+
+#services .service-image {
+    background-color: #3D2C8D;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px auto;
+    width: 5rem;
+    height: 5rem;
+    
+}
+.service-image img {
+    margin: 1rem auto;
+    width: 65%;
+    height: 65%;
+    outline-color: invert;
+    text-align: center;
+}
+.container-project {
+    color: #3D2C8D;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 0 ;
+}
+.container-project h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.container-project .heading{
+    position: relative;
+}
+.container-project hr {
+    
+    height: 0.5rem;
+    width: 40%;
+    text-align: right;
+    border-bottom: none;
+    border-radius: 5px;
+    border-color: #27186b;
+    margin-top: 0;
+    opacity: 1;
+    position: relative;
+    left: 35%;
+   
+}
+.our-story {
+    width: 100%;
+    margin: auto;
+}
 .image-container {
     background-color: whitesmoke;
+    width: 100%;
     height: 80%;
+    margin: 2rem auto;
 }
 .image-container .row {
-    padding: 0;
+    padding: 1rem;
     height: auto;
+    margin: auto;
     
 }
 .image-container .first img {
-    padding-top: 1rem;
-    
-    padding-bottom: 1rem;
-    width: 80%;
-    height: 80%;
-    
-}
-.image-container .second {
-    padding: 1rem auto;
-    margin-bottom: 1rem;
-}
-.image-container .second img {
-    width: 80%;
+    padding: 2rem 1rem 1rem;
+    margin: 1rem;
+    width: 100%;
     height: 100%;
-    padding-bottom: 1rem;
+    
 }
+
+.image-container .second img {
+    padding: 2rem 1rem 3rem;
+    margin: 1rem 1rem 3rem;
+    width: 100%;
+    height: 100%;
+}
+#testimony h1 {
+    text-align: center;
+}
+
+#testimony hr {
+    height: 0.5rem;
+    width: 60%;
+    text-align: right;
+    border-bottom: none;
+    border-radius: 5px;
+    border-color: #27186b;
+    margin-top: 0;
+    opacity: 1;
+    position: relative;
+    left: 25%;
+}
+#testimony .row {
+    padding: 1rem;
+}
+.testimony-image {
+    width: 8rem;
+    height: 8rem;
+    margin: auto;
+    
+}
+.testimony-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
 .container-records {
     margin: 0 auto;
     padding: auto;
@@ -180,24 +255,42 @@ html, body {
     background-color: #3D2C8D;
     width: 100%;
     height: auto;
-    padding: 2rem;
+    padding: 3rem 1rem 0 1rem;
     margin-bottom: 1rem;
 }
 .container-request h4 {
     font-size: 2rem;
     font-weight: 700;
 }
+.container-request .row {
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+}
+.container-request p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
 .btn {
     color: white;
     background-color: #533faa;
     border-radius: 25px;
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
+}
+.container-request img {
+    width: 70%;
+    height:70%;
+    margin: 0;
+    padding-top: 1rem;
 }
 .logo-container img {
-    padding: 1rem;
+    padding:0;
+    margin: 0;
     width: 100%;
     height: 100%;
+}
+.logo-container .col-lg-2 {
+    padding: 0.5rem;
 }
 footer {
     background-color: #3D2C8D;
@@ -210,11 +303,14 @@ footer {
 
 footer .awinteck-info {
     text-align: start;
+    margin: auto;
     width: 80%;
 }
 
 footer .useful-block {
     text-align: start;
+    width: 80%;
+    margin: auto;
 }
 
 footer .useful-block a{
@@ -225,6 +321,8 @@ footer .useful-block a{
 
 footer .info-block {
     text-align: start;
+    width: 80%;
+    margin: auto;
 }
 footer .info-block ul {
     margin: 0;
