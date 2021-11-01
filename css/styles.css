@@ -28,7 +28,7 @@ html, body {
 }
 
 .navbar .navbar-brand{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #3D2C8D;
     font-weight: 600;
 }
@@ -56,14 +56,15 @@ html, body {
 }
 .navbar-toggler {
     background-color: #3D2C8D;
+    border-radius: 25px;
     padding: auto;
-    margin: auto;
+
 }
 
 
 .navbar-toggler-icon {
-    width: 1.8rem;
-    border-radius: 5px;
+    width: 1.2rem;
+    color: white;
     margin: auto;
 }
 .container-home {
@@ -300,6 +301,9 @@ footer {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+footer .row .col-lg-4 {
+    padding: auto;
+}
 
 footer .awinteck-info {
     text-align: start;
@@ -334,7 +338,7 @@ footer .info-block li {
 }
 footer p {
     color: white;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
 }
 
