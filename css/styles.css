@@ -271,6 +271,11 @@ html, body {
     font-size: 1.5rem;
     line-height: 1.5;
 }
+
+form {
+    display: none;
+    text-align: start;
+}
 .btn {
     color: white;
     background-color: #533faa;
@@ -310,6 +315,9 @@ footer .awinteck-info {
     margin: auto;
     width: 80%;
 }
+footer .awinteck-info p {
+    padding: 0 0 1rem;
+}
 
 footer .useful-block {
     text-align: start;
@@ -338,7 +346,7 @@ footer .info-block li {
 }
 footer p {
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 0;
 }
 

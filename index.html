@@ -216,25 +216,25 @@
     <section id="records">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="record">
               <p class="number">37</p>
               <p>CLIENTS</p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="record">
               <p class="number">10</p>
               <p>WEBSITES</p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="record">
               <p class="number">5</p>
               <p>APPS</p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <div class="record">
               <p class="number">21</p>
               <p>DESIGNS</p>
@@ -254,7 +254,23 @@
               Do you need any of our services, but unsure of how to go about it.
               Then leave us a message and we'll get back to you ASAP.
             </p>
-            <button class="btn">Reach Out</button>
+            <form id="request-form" action="mailto:cnahammond@gmail.com" method="post" enctype="text/plain">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              
+            </form>
+            <button id="btn" class="btn" onclick="toggleForm() ">Reach Out</button>
+            
           </div>
           <div class="col-lg-6">
             <img src="images/request-image-2.png" alt="request-image" />
@@ -272,22 +288,22 @@
         </div>
         <div class="logo-container">
           <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4">
               <img src="images/nrtclogo.png" alt="nutrition-science" />
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4">
               <img src="images/safeforialogo.jpeg" alt="safeforialogo" />
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4">
               <img src="images/logo.jpg" alt="beinspired" />
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4">
               <img src="images/logo3.png" alt="power" />
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4 ">
               <img src="images/Listeddp1.png" alt="Listeddp1" />
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-4">
               <img src="images/Ajings.png" alt="ajings" />
             </div>
           </div>
@@ -313,8 +329,8 @@
               <h2>Useful Links</h2>
               <ul>
                 <li><a href="">Who we are</a></li>
-                <li><a href="">Our Story</a></li>
-                <li><a href="">Our Services</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#services">Our Services</a></li>
                 <li><a href="">Contact Us</a></li>
               </ul>
             </div>
@@ -340,6 +356,26 @@
       src="https://kit.fontawesome.com/baa25a8565.js"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function toggleForm() {
+        var form = document.getElementById("request-form");
+        var display = getComputedStyle(form).display;
+        var button = document.getElementById("btn");
+
+         if(display == "none") {
+           
+           form.style.display = "block";
+           button.value = "Submit"
+           button.innerHTML = "Submit";
+
+         } else {
+           form.style.display ="none";
+           button.value = "Reach Out"
+           button.innerHTML = "Reach Out";
+         }
+      }
+    </script>
 
     <!-- Bootstrap Script -->
     <script
