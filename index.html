@@ -23,6 +23,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("user_RqIcSvUHGdVRrEhnB70lJ");
+      })();
+    </script>
   </head>
   <body>
 
@@ -254,20 +260,20 @@
               Do you need any of our services, but unsure of how to go about it.
               Then leave us a message and we'll get back to you ASAP.
             </p>
-            <form id="request-form" action="mailto:cnahammond@gmail.com" method="post" enctype="text/plain">
+            <form id="request-form" onsubmit="return check(this)" method="post" enctype="text/plain">
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
               </div>
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                <input type="text" class="form-control" name="name" id="name" placeholder="John Doe">
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Your message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
               </div>
-              
+              <input type="submit" class="btn" value="Submit">
             </form>
             <button id="btn" class="btn" onclick="toggleForm() ">Reach Out</button>
             
@@ -366,15 +372,39 @@
          if(display == "none") {
            
            form.style.display = "block";
-           button.value = "Submit"
-           button.innerHTML = "Submit";
+           button.style.display = "none";
 
          } else {
            form.style.display ="none";
-           button.value = "Reach Out"
-           button.innerHTML = "Reach Out";
+           button.style.display="block";
          }
       }
+
+      let check = (theForm)=>{
+        let templateParams = {
+          from_name: theForm['name'].value,
+          message: theForm['message'].value,
+          reply_to: theForm['email'].value
+        };
+
+        for(let x in templateParams){
+          if(templateParams[x] == ''){
+            toggleForm();
+            return false;
+          }
+        }
+ 
+        emailjs.send('service_xuv7wel', 'template_2fv8xjz', templateParams)
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Email sent successfully!!');
+          }, function(error) {
+            alert('Couldn\'t send email!');
+            console.log('FAILED...', error);
+          });
+          theForm.reset();
+          return false;
+        }
     </script>
 
     <!-- Bootstrap Script -->
